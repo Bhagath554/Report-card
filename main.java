@@ -28,7 +28,7 @@ String rollNo = scanner.nextLine();
 
             System.out.print("Enter marks for " + subjects[i] + ": ");
             marks[i] = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine(); 
             total += marks[i];
         }
 
@@ -61,11 +61,11 @@ String rollNo = scanner.nextLine();
             System.out.printf("%-15s %3d\n", subjects[i], marks[i]);
         }
 
-        System.out.println("-----------------------------");
+        
         System.out.println("Total Marks : " + total);
         System.out.printf("Average     : %.2f\n", average);
         System.out.println("Grade       : " + grade);
-        System.out.println("=============================");
+        
 
         scanner.close();
     }
